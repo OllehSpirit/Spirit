@@ -1,0 +1,30 @@
+.container{
+    position: relative;
+    left: 560px;
+    top: -100px;
+}
+.txt{
+    position: relative;
+    top: -7px;
+}
+
+.spinner{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: hotpink;
+    animation: morph 2s infinite;
+}
+
+@keyframes morph{
+    0%, 100%{
+        border-radius: 50%;
+        transform: rotate(0deg);
+        background: hotpink;
+    }
+    50%{
+        border-radius: 0%;
+        transform: rotate(180deg);
+        background: rebeccapurple;
+    }
+}

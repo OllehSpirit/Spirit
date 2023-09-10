@@ -1,0 +1,69 @@
+.dropDownMenu ul{
+    list-style: none;
+}
+
+.dropDownMenu{
+    position: relative;
+    display: inline-block;
+    height: 45px;
+    width: 200px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ff4dd2;
+}
+
+.dropDown{
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    width: 200px;
+}
+
+.dropDown li{
+    display: none;
+    opacity: 0;
+    background-color: #fff;
+    transition: color .3s;
+    color: black;
+    text-align: center;
+}
+
+.dropDown li:hover{
+    background: #ff80df;
+}
+
+.dropDownMenu:hover .dropDown li{
+    display: block;
+    animation: animation .5s forwards;
+}
+
+.dropDownMenu .dropDown li:nth-last-child(1){
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.dropDownMenu .dropDown li:nth-child(2){
+    animation-delay: .2s;
+}
+.dropDownMenu .dropDown li:nth-child(3){
+    animation-delay: .4s;
+}
+.dropDownMenu .dropDown li:nth-child(4){
+    animation-delay: .6s;
+}
+.dropDownMenu .dropDown li:nth-child(5){
+    animation-delay: .8s;
+}
+
+@keyframes animation{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

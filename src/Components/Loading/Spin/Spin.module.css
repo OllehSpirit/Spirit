@@ -1,0 +1,55 @@
+.wrap{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 200px;
+    top: -100px;
+}
+
+.loader{
+    box-sizing: border-box;
+    width: 200%;
+    height: 200%;
+    border: 10px solid #162534;
+    border-top-color: #4bc8eb;
+    border-bottom-color: #f13a8f;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+
+.inner{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #162534;
+    animation-duration: 0.5s;
+    border-radius: 50%;
+    animation: rotate2 4s linear infinite;
+
+    border-top-color: #36f372;
+    border-bottom-color: #fff;
+}
+
+@keyframes rotate{
+    0%{
+        transform: scale(1.3) rotate(360deg);
+    }
+    50%{
+        transform: scale(.8) rotate(-360deg);
+    }
+    100%{
+        transform: scale(1.3) rotate(360deg);
+    }
+}
+
+@keyframes rotate2{
+    0%{
+        transform: scale(1) rotate(-360deg);
+    }
+    50%{
+        transform: scale(.8) rotate(360deg);
+    }
+    100%{
+        transform: scale(1) rotate(-360deg);
+    }
+}
